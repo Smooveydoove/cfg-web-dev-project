@@ -1,0 +1,293 @@
+/*box sizing*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Heading Fonts only */
+h1 {
+  font-family: "Gilda Display", serif;
+}
+h2 {
+  font-family: "Gilda Display", serif;
+}
+h3 {
+  font-family: "Gilda Display", serif;
+}
+h4 {
+  font-family: "Gilda Display", serif;
+}
+h5 {
+  font-family: "Gilda Display", serif;
+}
+h6 {
+  font-family: "Gilda Display", serif;
+}
+
+/* Paragraph Fonts only */
+p {
+  font-family: Work Sans;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Font Colours */
+.charcoal-col {
+  color: #3f4347;
+}
+.green-col {
+  color: #5e6353;
+}
+.orange-col {
+  color: #d1925c;
+}
+.darkred-col {
+  color: #a63d10;
+}
+.beige-col {
+  color: #f4e9e1;
+}
+
+/* Part of NAVIGATION FROM FARIA */
+/*global color styles*/
+:root {
+  --darkest: #3d4246;
+  --dark: #525947;
+  --neutral: #f5eee9;
+  --bright: #8e740a;
+  --accent: #963d00;
+  --white: #ffffff;
+}
+
+/* Part of NAVIGATION FROM FARIA */
+/* section backgrounds*/
+.section-dark {
+  background-color: var(--dark) !important;
+  color: var(--white);
+}
+
+.section-light {
+  background-color: var(--neutral) !important;
+  color: var(--darkest);
+}
+
+.section-darkest {
+  background-color: var(--darkest) !important;
+  color: var(--white);
+}
+
+/* NAVIGATION FROM FARIA */
+/*Navigation image */
+.modal-backdrop {
+  background-image: url("images/image52.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease 0s;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+}
+
+/*Navigation background*/
+.navbar {
+  background-color: var(--darkest) !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 20' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: var(--white) !important;
+}
+
+/*Navigation toggle*/
+.offcanvas {
+  background-color: var(--darkest);
+}
+
+.offcanvas-header {
+  justify-content: end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+}
+
+/*navigation text*/
+.display-3 {
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.2em;
+  font-size: calc(1.2rem + 1.2vw);
+  letter-spacing: -0.01em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*navigation button*/
+.btn-light {
+  background-color: var(--bright);
+  border-color: var(--bright);
+  border-radius: 50% 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: calc(0.75rem + 0.2vw);
+  font-weight: 300;
+  color: var(--white);
+  z-index: 3;
+  position: relative;
+}
+
+.btn-light:hover {
+  background-color: var(--neutral);
+  border-color: var(--neutral);
+  color: var(--darkest);
+}
+/* NAVIGATION FROM FARIA ENDS HERE... */
+
+/* Static header image – Stay with Us page */
+.static-image {
+  background-image: url(images/image21_CROPPED_4620x2082.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Static header image – Contact Us page */
+.static-image-contact {
+  background-image: url(images/pexels-rachel-claire-5531020_CROPPED_4620x2082.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MY ATTEMPT AT AN OVERLAY
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+*/
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .py-container {
+    padding-top: 24rem;
+    padding-bottom: 1rem;
+  }
+
+  .px-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .py-container {
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+  }
+
+  .px-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Intro paragraph container style */
+.intro-para {
+  background-color: #f4e9e1;
+  height: relative;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: var(--bright);
+  border-color: var(--bright);
+  border-radius: 50% 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: calc(0.75rem + 0.2vw);
+  font-weight: 300;
+  z-index: 2;
+  margin-top: 15px;
+}
+
+.btn-success:hover {
+  background-color: var(--white);
+  border-color: var(--bright);
+  color: var(--bright);
+}
+
+.btn-outline-secondary {
+  background-color: none;
+  border-color: var(--white);
+  border-radius: 50% 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: calc(0.75rem + 0.2vw);
+  font-weight: 300;
+  z-index: 2;
+  margin-top: 15px;
+  color: var(--white);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--bright);
+  border-color: var(--bright);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+/* NEWSLETTER SECTION FROM WARDA, edited by me */
+.newsletter {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+/* VK did this */
+.newsletter-bg {
+  background-color: #5e6353;
+  height: relative;
+}
+
+/* Footer Styles */
+.footer-block {
+  background-color: #3f4347;
+  height: relative;
+}
+ul {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+li {
+  padding-bottom: 20px;
+}
+.text-dulled {
+  color: #93989d;
+}
